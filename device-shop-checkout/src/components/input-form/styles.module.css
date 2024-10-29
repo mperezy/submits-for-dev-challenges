@@ -1,0 +1,27 @@
+.root {
+  @apply
+    w-full
+    flex flex-col
+    gap-y-2
+  ;
+}
+
+.label {
+  @apply
+    text-black-60
+    text-sm
+    font-semibold
+  ;
+}
+
+.input {
+  @apply
+    bg-[#F3F5F6]
+    px-4 py-3
+    text-black-90
+    border-[1.5px]
+    border-black-20
+    rounded-lg
+    focus:outline-none
+  ;
+}
