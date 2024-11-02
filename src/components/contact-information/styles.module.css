@@ -1,0 +1,30 @@
+.root {
+  @apply
+    w-full md:w-1/2
+    bg-white
+    p-10
+    flex flex-col
+    gap-y-7
+  ;
+}
+
+.country-postal-code-container {
+  @apply
+    flex flex-col xl:flex-row
+    gap-y-7 xl:gap-x-5
+  ;
+}
+
+.continue-button {
+  border: 1px solid transparent;
+  @apply
+    text-base
+    font-medium
+    bg-black-90
+    rounded-lg
+    py-[.6rem]
+    px-5
+    focus:outline-none
+    hover:border-transparent
+  ;
+}

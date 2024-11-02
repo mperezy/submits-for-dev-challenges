@@ -1,0 +1,32 @@
+.root {
+  @apply
+    relative
+    h-screen w-screen
+    bg-root-background
+    overflow-auto
+  ;
+}
+
+.checkout-container {
+  @apply
+    w-full
+    2xl:max-w-[1280px]
+    py-10
+    flex items-center justify-center self-center
+  ;
+}
+
+.checkout-header {
+  @apply flex flex-row gap-x-2;
+}
+
+.items-badge {
+  @apply
+    px-3
+    bg-item-badge
+    rounded-full
+    font-bold text-xs
+    flex flex-row
+    items-center
+  ;
+}

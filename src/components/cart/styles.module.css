@@ -1,0 +1,141 @@
+/* Cart */
+.root {
+  @apply
+    w-full md:w-1/2
+    p-10
+    flex flex-col
+    justify-between
+    gap-y-5
+    bg-cart-background
+  ;
+}
+
+.item-list {
+  @apply
+    flex flex-col
+    gap-y-6
+  ;
+}
+
+.checkout-container {
+  @apply
+    flex flex-col
+    gap-y-5
+  ;
+}
+
+.coupon-container {
+  @apply
+    w-full
+    flex flex-row
+    gap-x-2
+  ;
+}
+
+.coupon-input {
+  @apply
+    w-full
+    bg-white
+    rounded-lg
+    px-4
+    text-black-90
+    border-[1.5px]
+    border-black-20
+    focus:outline-none
+  ;
+}
+
+.coupon-button {
+  border: 1px solid transparent;
+  @apply
+    w-[40%]
+    text-base
+    font-medium
+    bg-black-90
+    rounded-lg
+    py-[.6rem]
+    px-5
+    focus:outline-none
+  ;
+}
+
+.total-container {
+  @apply
+    w-full
+    flex flex-col
+    gap-y-2
+  ;
+}
+
+.price-gray-label {
+  @apply
+    text-black-60
+    font-bold
+  ;
+}
+
+.price-black-label {
+  @apply
+    text-black-90
+    font-bold
+  ;
+}
+
+.price-calculation {
+  @apply
+    w-full
+    flex
+    items-center
+    justify-between
+  ;
+}
+
+/* Cart Item */
+.item-root {
+  @apply
+    flex flex-row
+    gap-x-5
+  ;
+}
+
+.item-image {
+  @apply
+    w-24
+    h-24
+    bg-white
+    flex flex-row
+    items-center
+    justify-center
+    rounded-lg
+    border-[1px]
+    border-[#D7D9DE]
+  ;
+}
+
+.item-header {
+  @apply
+    w-full
+    flex flex-row
+    justify-between
+  ;
+}
+
+.item-bottom {
+  @apply
+    w-full
+    flex flex-row
+    items-center
+    justify-between
+  ;
+}
+
+.item-clear-button {
+  @apply
+    bg-transparent
+    text-black-60
+    w-5 h-5
+    p-0
+    focus:outline-none
+    hover:border-transparent
+  ;
+}
