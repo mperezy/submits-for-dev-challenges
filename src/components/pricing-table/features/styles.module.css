@@ -1,0 +1,22 @@
+.root {
+  @apply
+    rounded-tl-xl
+    rounded-bl-xl
+    overflow-hidden
+    mb-16
+    flex flex-col
+  ;
+}
+
+.feature {
+  @apply
+    h-12
+    pl-5 pr-6
+    bg-white-40
+    font-semibold
+    flex
+    items-center
+    border-b
+    border-b-white-50
+  ;
+}

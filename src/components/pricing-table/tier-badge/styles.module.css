@@ -1,0 +1,18 @@
+.root {
+  @apply
+    bg-white-10
+    text-blue-50
+    text-center
+    font-semibold
+    rounded-full
+    py-[1px]
+    px-[.75rem]
+  ;
+}
+
+.active {
+  @apply
+    bg-blue-50
+    text-white-10
+  ;
+}

@@ -1,0 +1,65 @@
+.root {
+  @apply
+    overflow-hidden
+    pt-5
+    rounded-xl
+    flex flex-col
+  ;
+}
+
+.active {
+  @apply
+    bg-black-95
+    text-white-10
+  ;
+}
+
+.header {
+  @apply
+    px-12
+    flex flex-col
+    items-center
+    gap-y-4
+  ;
+}
+
+.features {
+  @apply
+    mt-10
+    flex flex-col
+  ;
+}
+
+.feature-item {
+  @apply
+    h-12
+    flex
+    items-center
+    justify-center
+    border-b
+    border-b-white-50
+  ;
+}
+
+.feature-item-active {
+  @apply
+    border-b-black-95
+  ;
+}
+
+.get-started {
+  @apply
+    h-16
+    flex
+    items-center
+    justify-center
+    text-blue-50
+    font-semibold
+  ;
+}
+
+.get-started-active {
+  @apply
+  bg-yellow-40
+  text-white-10
+}

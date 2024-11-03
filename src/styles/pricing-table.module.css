@@ -1,0 +1,45 @@
+.root {
+  @apply
+    w-full
+    /*h-screen*/
+    flex flex-col
+    items-center
+    text-black-95
+  ;
+}
+
+.header {
+  @apply
+    w-full
+    bg-white-40
+    flex flex-col
+    items-center
+    gap-y-3
+    py-12
+    border-b-2
+    border-b-white-50
+  ;
+}
+
+.heading {
+  @apply
+    font-extrabold text-3xl
+  ;
+}
+
+.sub-heading {
+  @apply
+    w-[28rem] text-center
+    text-[#636975]
+  ;
+}
+
+.pricing-table {
+  @apply
+    w-full h-full
+    bg-white-10
+    flex justify-center
+    items-end
+    py-14
+  ;
+}

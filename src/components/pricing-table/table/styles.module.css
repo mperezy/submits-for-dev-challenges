@@ -1,0 +1,6 @@
+.root {
+  @apply
+    h-[70%]
+    flex
+  ;
+}
