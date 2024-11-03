@@ -1,0 +1,35 @@
+.root {
+  @apply
+    bg-white-10
+    text-[#000]
+    p-16
+    max-w-screen-xl
+    flex
+    justify-center
+  ;
+}
+
+.container {
+  @apply
+    relative
+    bg-[#F3F4F6]
+    /*p-5*/
+    rounded-2xl
+    overflow-hidden
+    flex flex-col
+  ;
+}
+
+.container-decor {
+  @apply
+    w-[13rem]
+    absolute
+  ;
+}
+
+.row {
+  @apply
+    relative z-10
+    grid grid-cols-4 h-[18.125rem]
+  ;
+}

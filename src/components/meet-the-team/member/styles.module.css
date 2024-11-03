@@ -1,0 +1,37 @@
+.root {
+  @apply
+    relative
+    p-5
+    flex
+    items-end
+  ;
+}
+
+.image {
+  @apply
+    absolute bottom-0 right-0
+  ;
+}
+
+.gradient {
+  @apply
+    absolute
+    w-full
+    bottom-0 right-0
+  ;
+}
+
+.data {
+  @apply
+    relative
+    flex flex-col z-10
+    text-white-10
+  ;
+}
+
+.name {
+    @apply
+    text-xl
+    font-bold
+    ;
+}
