@@ -1,3 +1,4 @@
+import NextImage from 'next/image';
 import cx from 'classnames';
 import TierBadge from 'components/pricing-table/tier-badge';
 import styles from 'components/pricing-table/tier-item/styles.module.css';
@@ -21,7 +22,11 @@ export default ({ planTier: { active, ...planTier } }: Props) => (
           {planTier.features[featureKey] === false ? (
             '-'
           ) : planTier.features[featureKey] === true ? (
-            <img src={`/images/pricing-table/check${!active ? '-1' : ''}.svg`} alt='Check icon' />
+            <NextImage
+              fill
+              src={`/images/pricing-table/check${!active ? '-1' : ''}.svg`}
+              alt='Check icon'
+            />
           ) : (
             planTier.features[featureKey]
           )}
@@ -31,7 +36,11 @@ export default ({ planTier: { active, ...planTier } }: Props) => (
 
     <div className={cx(styles['get-started'], active ? styles['get-started-active'] : '')}>
       Get Started{' '}
-      <img src={`/images/pricing-table/down arrow${!active ? '-1' : ''}.svg`} alt='Arrow Icon' />
+      <NextImage
+        fill
+        src={`/images/pricing-table/down arrow${!active ? '-1' : ''}.svg`}
+        alt='Arrow Icon'
+      />
     </div>
   </div>
 );

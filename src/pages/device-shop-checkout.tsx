@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Inter } from 'next/font/google';
+import NextImage from 'next/image';
 import cx from 'classnames';
 import Cart from 'components/device-shop-checkout/cart';
 import ContactInformation from 'components/device-shop-checkout/contact-information';
@@ -20,7 +21,11 @@ export default () => {
 
   return (
     <div className={cx(InterFont.className, styles.root)}>
-      <img src='/images/device-shop-checkout/background-image@2x.png' alt='Background Image' />
+      <NextImage
+        fill
+        src='/images/device-shop-checkout/background-image@2x.png'
+        alt='Background Image'
+      />
 
       <div className='flex w-full absolute top-0 justify-center'>
         <div className={styles['checkout-container']}>

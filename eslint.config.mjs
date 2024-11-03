@@ -1,8 +1,18 @@
+import { FlatCompat } from '@eslint/eslintrc';
 import js from '@eslint/js';
 import globals from 'globals';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
 import tsEslint from 'typescript-eslint';
+
+import path from 'path';
+import { fileURLToPath } from 'url';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const compat = new FlatCompat({
+  baseDirectory: __dirname,
+});
 
 export default tsEslint.config(
   {
@@ -10,6 +20,8 @@ export default tsEslint.config(
   },
   {
     extends: [
+      ...compat.extends('next/core-web-vitals'),
+      ...compat.extends('next/typescript'),
       js.configs.recommended,
       ...tsEslint.configs.recommended,
       // 'next/core-web-vitals',
@@ -32,6 +44,7 @@ export default tsEslint.config(
       '@typescript-eslint/no-unused-vars': 'error',
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/consistent-type-imports': 'error',
+      'import/no-anonymous-default-export': 'off',
       semi: ['error', 'always'],
       eqeqeq: ['error', 'always'],
 

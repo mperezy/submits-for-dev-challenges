@@ -1,3 +1,4 @@
+import NextImage from 'next/image';
 import styles from './styles.module.css';
 
 export default ({ name, role, imageUrl, backgroundColor }: TeamMember) => (
@@ -7,8 +8,14 @@ export default ({ name, role, imageUrl, backgroundColor }: TeamMember) => (
       backgroundColor,
     }}
   >
-    <img className={styles.image} src={imageUrl} alt={`Profile image ${name}`} />
-    <img className={styles.gradient} src='/images/meet-the-team/Gradient.svg' alt='Gradient' />
+    <NextImage fill className={styles.image} src={imageUrl} alt={`Profile image ${name}`} />
+    <NextImage
+      width='0'
+      height='0'
+      className={styles.gradient}
+      src='/images/meet-the-team/Gradient.svg'
+      alt='Gradient'
+    />
 
     <div className={styles.data}>
       <h5 className={styles.name}>{name}</h5>
