@@ -1,7 +1,7 @@
 import { getCountryDataList } from 'countries-list';
-import InputForm from 'components/input-form';
-import styles from 'components/contact-information/styles.module.css';
-import inputStyles from 'components/input-form/styles.module.css';
+import InputForm from 'components/device-shop-checkout/input-form';
+import styles from 'components/device-shop-checkout/contact-information/styles.module.css';
+import inputStyles from 'components/device-shop-checkout/input-form/styles.module.css';
 
 export default () => (
   <div className={styles.root}>

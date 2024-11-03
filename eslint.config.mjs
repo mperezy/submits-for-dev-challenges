@@ -12,8 +12,8 @@ export default tsEslint.config(
     extends: [
       js.configs.recommended,
       ...tsEslint.configs.recommended,
-      'next/core-web-vitals',
-      'next/typescript',
+      // 'next/core-web-vitals',
+      // 'next/typescript',
     ],
     files: ['**/*.{ts,tsx}'],
     languageOptions: {

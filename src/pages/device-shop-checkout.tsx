@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Inter } from 'next/font/google';
 import cx from 'classnames';
-import Cart from 'components/cart';
-import ContactInformation from 'components/contact-information';
+import Cart from 'components/device-shop-checkout/cart';
+import ContactInformation from 'components/device-shop-checkout/contact-information';
 import data from 'constants/device-shop-checkout';
 import styles from 'styles/device-shop-checkout.module.css';
 

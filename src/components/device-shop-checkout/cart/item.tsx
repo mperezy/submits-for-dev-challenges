@@ -1,5 +1,5 @@
 import formatNumber from 'utils/format-number';
-import styles from 'components/cart/styles.module.css';
+import styles from 'components/device-shop-checkout/cart/styles.module.css';
 
 type Props = CartItem & {
   handleRemoveItem: (itemId: number) => void;

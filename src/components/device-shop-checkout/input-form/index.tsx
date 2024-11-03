@@ -1,5 +1,5 @@
 import type { HTMLInputTypeAttribute, ReactNode } from 'react';
-import styles from 'components/input-form/styles.module.css';
+import styles from 'components/device-shop-checkout/input-form/styles.module.css';
 
 type Props = {
   id: string;

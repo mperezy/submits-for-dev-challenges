@@ -1,5 +1,5 @@
-import CartItem from 'components/cart/item';
-import styles from 'components/cart/styles.module.css';
+import CartItem from 'components/device-shop-checkout/cart/item';
+import styles from 'components/device-shop-checkout/cart/styles.module.css';
 import formatNumber from 'utils/format-number';
 
 type Props = {
