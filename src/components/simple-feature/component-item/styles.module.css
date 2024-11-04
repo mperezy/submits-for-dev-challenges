@@ -1,0 +1,10 @@
+.root {
+  @apply
+    bg-[#212936]
+    rounded-lg
+    p-5
+    w-[20rem]
+    flex flex-col
+    gap-y-3
+  ;
+}

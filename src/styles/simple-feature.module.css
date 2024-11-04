@@ -1,0 +1,28 @@
+.root {
+  @apply
+    max-w-screen-xl
+    w-full
+    bg-[#121826]
+    p-12
+    flex flex-col
+    items-center
+    gap-y-12
+  ;
+}
+
+.header {
+  @apply
+    w-[25rem]
+    flex flex-col
+    items-center
+    gap-y-3.5
+  ;
+}
+
+.components-container {
+  @apply
+    flex flex-wrap
+    justify-center
+    gap-10
+  ;
+}

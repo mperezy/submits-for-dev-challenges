@@ -16,6 +16,10 @@ const pages: Page[] = [
     href: '/meet-the-team',
     title: 'Meet the Team',
   },
+  {
+    href: '/simple-feature',
+    title: 'Simple Feature',
+  },
 ];
 
 export default pages;
