@@ -1,0 +1,29 @@
+.root {
+  @apply
+    max-w-screen-xl
+    w-full
+    text-[#000]
+    flex flex-col
+    items-center
+    gap-y-10
+    pt-10
+    mx-auto
+    px-6 lg:px-36 xl:px-[17rem]
+  ;
+}
+
+.heading {
+  @apply
+    w-[35rem]
+    text-[2.25rem]
+    font-semibold
+    text-center
+  ;
+}
+
+.articles {
+  @apply
+    flex flex-col
+    gap-y-12
+  ;
+}

@@ -20,6 +20,10 @@ const pages: Page[] = [
     href: '/simple-feature',
     title: 'Simple Feature',
   },
+  {
+    href: '/simple-article-listing',
+    title: 'Simple Article Listing',
+  },
 ];
 
 export default pages;
