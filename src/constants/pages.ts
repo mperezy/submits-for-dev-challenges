@@ -1,28 +1,48 @@
+type ChallengeType = 'Responsive Developer' | 'Front-end Developer' | 'Fullstack Developer';
+
+type Challenge = {
+  type: ChallengeType;
+  challenges: Page[];
+};
+
 type Page = {
   href: string;
   title: string;
 };
 
-const pages: Page[] = [
+const pages: Challenge[] = [
   {
-    href: '/device-shop-checkout',
-    title: 'Device Shop Checkout',
+    type: 'Responsive Developer',
+    challenges: [
+      {
+        href: '/device-shop-checkout',
+        title: 'Device Shop Checkout',
+      },
+      {
+        href: '/pricing-table',
+        title: 'Pricing Table',
+      },
+      {
+        href: '/meet-the-team',
+        title: 'Meet the Team',
+      },
+      {
+        href: '/simple-feature',
+        title: 'Simple Feature',
+      },
+      {
+        href: '/simple-article-listing',
+        title: 'Simple Article Listing',
+      },
+    ],
   },
   {
-    href: '/pricing-table',
-    title: 'Pricing Table',
+    type: 'Front-end Developer',
+    challenges: [],
   },
   {
-    href: '/meet-the-team',
-    title: 'Meet the Team',
-  },
-  {
-    href: '/simple-feature',
-    title: 'Simple Feature',
-  },
-  {
-    href: '/simple-article-listing',
-    title: 'Simple Article Listing',
+    type: 'Fullstack Developer',
+    challenges: [],
   },
 ];
 
