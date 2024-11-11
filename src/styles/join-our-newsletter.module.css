@@ -1,0 +1,81 @@
+.root {
+  @apply
+    max-w-screen-xl
+    w-full
+    text-[#000]
+    flex flex-col
+    items-center
+      gap-y-3
+    /*gap-y-10*/
+    pt-10
+    mx-auto
+    px-6 lg:px-40 xl:px-[18rem]
+  ;
+}
+
+.logo {
+  @apply
+    relative
+    w-14 h-14
+  ;
+}
+
+.heading {
+  @apply
+    text-[2rem] lg:text-[3rem]
+    font-semibold
+  ;
+}
+
+.sub-heading {
+  @apply
+    text-[#6C727F]
+    text-[1.05rem] lg:text-[1.25rem]
+    text-center
+    font-normal
+  ;
+}
+
+.card {
+  @apply
+    w-full lg:w-[80%]
+    flex flex-col
+    lg:items-center
+    gap-y-5
+    shadow-lg
+    rounded-xl
+    p-6
+    mt-14
+  ;
+}
+
+.input {
+  @apply
+    w-full
+    placeholder:text-[#394150] placeholder:text-center placeholder:font-medium placeholder:text-[1rem]
+    bg-[#F9FAFB]
+    border border-[#E5E7EB]
+    rounded-xl
+    py-4
+  ;
+}
+
+.subscribe-button {
+  @apply
+    w-full
+    bg-[#284BCE]
+    text-[#F9FAFB]
+    text-[1rem]
+    font-semibold
+    rounded-xl
+    py-4
+  ;
+}
+
+.help-text {
+  @apply
+    text-[.875rem]
+    text-[#6C727F]
+    font-normal
+  ;
+}

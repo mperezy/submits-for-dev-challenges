@@ -34,6 +34,10 @@ const pages: Challenge[] = [
         href: '/simple-article-listing',
         title: 'Simple Article Listing',
       },
+      {
+        href: '/join-our-newsletter',
+        title: 'Join Our Newsletter',
+      },
     ],
   },
   {
